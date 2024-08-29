@@ -1,12 +1,68 @@
-<!DOCTYPE >
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>homepage</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="index.css"></link>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <h1>My Website</h1>
-    <a href="./page1.html">Page 1 link</a>
+    <div id="header">Damian Rozycki</div>
+    <div id="sub-header">
+      Welcome to my website, here you can find links to my Github, LinkedIn, and
+      Resume!
+    </div>
+    <div class="nav-bar">
+      <div>
+        <button>About me</button>
+      </div>
+      <div><button>Email Me</button></div>
+      <div><button>LinkedIn</button></div>
+      <div><button>GitHub</button></div>
+      <div><button>Resume</button></div>
+    </div>
+
+    <div id="modal-container">
+      <div class="modal-background">
+        <div class="modal">
+          <img src="./images/github.png" alt="github" />
+          <div class="modal-text-container">
+            <h1 class="modal-text">My Github Profile</h1>
+            <p class="modal-button">
+              <a href="https://github.com/DamiansPortfolio"
+                ><button>CLICK HERE!</button></a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="content">
+        <div class="buttons">
+          <img id="six" class="button" src="./images/github.png" alt="github" />
+        </div>
+        <div class="buttons">
+          <img
+            id="five"
+            class="button"
+            src="./images/linkedin.png"
+            alt="github"
+          />
+        </div>
+        <div class="buttons">
+          <img
+            id="four"
+            class="button"
+            src="./images/resume.png"
+            alt="github"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- CDN and script files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
