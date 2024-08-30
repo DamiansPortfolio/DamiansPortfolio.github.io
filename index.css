@@ -181,6 +181,14 @@ h2 {
   display: flex;
 }
 
+.about-container,
+.courses-taken-container,
+.projects-container,
+.intrests-container {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
 ul {
   padding-left: 20px;
 }
