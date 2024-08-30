@@ -147,9 +147,8 @@ header {
   margin: 0;
   text-align: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.9);
-  font-size: 30px;
-  padding: 20px;
   font-size: 24px;
+  padding: 20px;
 }
 
 .about-container,
@@ -182,7 +181,7 @@ ul {
 .courses-taken-text,
 .projects-text,
 .intrests-text {
-  font-size: 40px;
+  font-size: 28px;
   font-weight: bold;
   color: white;
 }
@@ -209,7 +208,6 @@ ul {
 
 .projects-container a:hover {
   text-decoration: underline;
-  font-size: 18px;
 }
 
 .right-side a,
@@ -237,7 +235,7 @@ header {
   }
 
   #email:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 @media only screen and (max-width: 960px) {
@@ -260,7 +258,7 @@ header {
   }
 
   #email:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 
