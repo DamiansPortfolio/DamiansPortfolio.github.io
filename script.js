@@ -1,10 +1,19 @@
-$(".button").click(function () {
-  var buttonId = $(this).attr("id");
-  $("#modal-container").removeAttr("class").addClass(buttonId);
-  $("body").addClass("modal-active");
-});
+function redirectUrl(url) {
+  window.open(url, "_blank");
+}
 
-$("#modal-container").click(function () {
-  $(this).addClass("out");
-  $("body").removeClass("modal-active");
-});
+var modal = document.getElementById("myModal");
+
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function () {
+  modal.style.display = "block";
+  modalImg.src = this.src;
+};
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function () {
+  modal.style.display = "none";
+};

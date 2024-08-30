@@ -3,66 +3,104 @@
   <head>
     <title>homepage</title>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div id="header">Damian Rozycki</div>
-    <div id="sub-header">
-      Welcome to my website, here you can find links to my Github, LinkedIn, and
-      Resume!
-    </div>
-    <div class="nav-bar">
-      <div>
-        <button>About me</button>
-      </div>
-      <div><button>Email Me</button></div>
-      <div><button>LinkedIn</button></div>
-      <div><button>GitHub</button></div>
-      <div><button>Resume</button></div>
-    </div>
-
-    <div id="modal-container">
-      <div class="modal-background">
-        <div class="modal">
-          <img src="./images/github.png" alt="github" />
-          <div class="modal-text-container">
-            <h1 class="modal-text">My Github Profile</h1>
-            <p class="modal-button">
-              <a href="https://github.com/DamiansPortfolio"
-                ><button>CLICK HERE!</button></a
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="main-content">
-      <div class="content">
-        <div class="buttons">
-          <img id="six" class="button" src="./images/github.png" alt="github" />
-        </div>
-        <div class="buttons">
-          <img
-            id="five"
+    <header>
+      Welcome to my website you can click any of the images on the left to visit
+      my github or linkedin.<br />
+      You can also click the image of my resume to view it in full screen.
+    </header>
+    <main>
+      <div class="left-side">
+        <div class="image-container">
+          <button
             class="button"
-            src="./images/linkedin.png"
-            alt="github"
-          />
+            onclick="redirectUrl('https://github.com/DamiansPortfolio')"
+          >
+            <img src="/images/github.png" alt="github" />
+          </button>
         </div>
-        <div class="buttons">
-          <img
-            id="four"
+        <div class="image-container">
+          <button
             class="button"
-            src="./images/resume.png"
-            alt="github"
-          />
+            onclick="redirectUrl('https://www.linkedin.com/in/damianrozycki/')"
+          >
+            <img src="/images/linkedin.png" alt="linkedin" />
+          </button>
+        </div>
+        <div class="image-container">
+          <button class="button">
+            <img id="myImg" src="/images/full-resume.png" alt="My resume" />
+          </button>
         </div>
       </div>
-    </div>
 
-    <!-- CDN and script files -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <div class="right-side">
+        <div class="about-container">
+          <div class="about-me">About Me</div>
+          <p>
+            Hey! My name is Damian Rozycki, I am a CS Senior at Towson
+            University. I'm currently interning at CACI as a Software Developer
+            for the web-dev team.
+          </p>
+        </div>
+        <div class="courses-taken-container">
+          <div class="courses-taken-text">Courses Taken</div>
+          <ul>
+            <li>COSC 484: Web Programming</li>
+            <li>COSC 436: Object Oriented Design and Programming</li>
+            <li>COSC 435: Mobile Application Development (IOS)</li>
+            <li>COSC 461: Artificial Intelligence</li>
+            <li>COSC 439: Operating Systems</li>
+            <li>COSC 457: Database Management Systems</li>
+            <li>COSC 412: Software Engineering</li>
+            <li>COST 336: Data Structures and Algorithms</li>
+            <li>COSC 455: Programming Languages Design and Implementation</li>
+          </ul>
+        </div>
+        <div class="projects-container">
+          <div class="projects-text">Projects</div>
+          <li>
+            <a
+              href="https://github.com/DamiansPortfolio/HealthcareAppointmentWebsite"
+              >Healthcare Appointment Management System</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/DamiansPortfolio/SimpleParser"
+              >Simple Parser</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/DamiansPortfolio/FileManagementSystem_Project"
+              >File Management System</a
+            >
+          </li>
+          <li><a href="#">Database Management System</a></li>
+        </div>
+        <div class="intrests-container">
+          <div class="intrests-text">Intrests</div>
+          <p>
+            Going out to eat and visit cool new places is something I enjoy
+            doing with my partner.<br />
+            I also enjoy learning new things constantly, trying to improve
+            myself in any way I can.<br />
+            I have intrest in AI and Machine Learning, and I plan on going for
+            my masters after I graduate.
+          </p>
+        </div>
+      </div>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01" />
+        <div id="caption"></div>
+      </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
