@@ -226,20 +226,19 @@ header {
     width: 90%;
   }
 
-  .left-side {
-    padding: 50px;
-  }
-
   header {
     font-size: 20px;
     padding: 15px;
   }
+  .right-side,
+  .left-side {
+    font-size: 12px;
+    overflow-wrap: break-word;
+    width: 100%;
+  }
 
-  .about-me,
-  .courses-taken-text,
-  .projects-text,
-  .intrests-text {
-    font-size: 24px;
+  #email:hover {
+    text-decoration: underline;
   }
 }
 @media only screen and (max-width: 960px) {
@@ -254,12 +253,15 @@ header {
 
   .left-side {
     border-right: none;
-    padding: 60px;
   }
 
   .left-side,
   .right-side {
     width: 100%;
+  }
+
+  #email:hover {
+    text-decoration: underline;
   }
 }
 
@@ -276,5 +278,9 @@ header {
   .right-side,
   .left-side {
     justify-content: space-evenly;
+  }
+
+  #email:hover {
+    text-decoration: underline;
   }
 }
